@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FORM.frmAdicao" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AATAAAAAACAAABBIAAKAAAFDAgAAAkCAACYCAAoAAAg=</HashCode>
+      <FileName>frmAdicao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FORM.frmDivisao" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AA7AAAAgACAAABBIAAKAAAFCAgAAAkCAACYCAAoAAAg=</HashCode>
+      <FileName>frmDivisao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FORM.frmMenu" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AADBAAAgAGAAAAAAAACAAAACAAg4AAAAAHAAAAAAgAA=</HashCode>
+      <FileName>frmMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FORM.frmMultiplicacao" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAbAAAAAACAEABBIAQKAAAFCAgAAAkCAACYCAAoAAAg=</HashCode>
+      <FileName>frmMultiplicacao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FORM.frmSubtracao" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAbAAAAAACAEABBIAAKAAAFCAgAAAkCAACYCAQoAAAg=</HashCode>
+      <FileName>frmSubtracao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FORM.Program" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FORM.Properties.Resources" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FORM.Properties.Settings" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
