@@ -53,25 +53,24 @@ namespace FORM
             somMusica.Play();
             somMusica.Stop();
         }
-        private void tocarMusicaMenu()
-        {
-            SoundPlayer somMusica = new SoundPlayer(@"\FORM\Audios\cafe.wav");
-            somMusica.Play();
-        }
         private void frmMenu_Load(object sender, EventArgs e)
         {
-            tocarMusicaMenu();
-        }
-        private void btPlay_Click(object sender, EventArgs e)
-        {
-            tocarMusicaMenu();
-        }
-        private void btPause_Click(object sender, EventArgs e)
-        {
-            tocarMusicaMenu();
+            SoundPlayer somMusica = new SoundPlayer(@"C:\Users\Vanderson\Desktop\FORM\Audios\cafe.wav");
+            somMusica.Play();
         }
         private void frmMenu_FormClosed(object sender, FormClosedEventArgs e)
         {
+        }
+
+        private void btPlay_Click(object sender, EventArgs e)
+        {
+            SoundPlayer somMusica = new SoundPlayer(@"C:\Users\Vanderson\Desktop\FORM\Audios\cafe.wav");
+            somMusica.Play();
+        }
+        private void btPause_Click(object sender, EventArgs e)
+        {
+            SoundPlayer somMusica = new SoundPlayer(@"C:\Users\Vanderson\Desktop\FORM\Audios\cafe.wav");
+            somMusica.Stop();
         }
     }
 }
