@@ -22,7 +22,7 @@ namespace FORM
             frmAdicao adicao = new frmAdicao();
             adicao.Show();
             this.Hide();
-            SoundPlayer somMusica = new SoundPlayer(@"\FORM\Audios\cafe.wav");
+            SoundPlayer somMusica = new SoundPlayer(@"cafe.wav");
             somMusica.Play();
             somMusica.Stop();
         }
@@ -31,7 +31,7 @@ namespace FORM
             frmMultiplicacao mult = new frmMultiplicacao();
             mult.Show();
             this.Hide();
-            SoundPlayer somMusica = new SoundPlayer(@"\FORM\Audios\cafe.wav");
+            SoundPlayer somMusica = new SoundPlayer(@"Audios\cafe.wav");
             somMusica.Play();
             somMusica.Stop();
         }
@@ -40,7 +40,7 @@ namespace FORM
             frmSubtracao sub = new frmSubtracao();
             sub.Show();
             this.Hide();
-            SoundPlayer somMusica = new SoundPlayer(@"\FORM\Audios\cafe.wav");
+            SoundPlayer somMusica = new SoundPlayer(@"Audios\cafe.wav");
             somMusica.Play();
             somMusica.Stop();
         }
@@ -49,14 +49,15 @@ namespace FORM
             frmDivisao div = new frmDivisao();
             div.Show();
             this.Hide();
-            SoundPlayer somMusica = new SoundPlayer(@"\FORM\Audios\cafe.wav");
+            SoundPlayer somMusica = new SoundPlayer(@"cafe.wav");
             somMusica.Play();
             somMusica.Stop();
         }
         private void frmMenu_Load(object sender, EventArgs e)
         {
-            //SoundPlayer somMusica = new SoundPlayer(@"\FORM\Audios\cafe.wav");
-            //somMusica.Play();
+            SoundPlayer somMusica = new SoundPlayer();
+            somMusica.SoundLocation = Environment.CurrentDirectory + "cafe.wav";
+            somMusica.Play();
         }
         private void frmMenu_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -64,12 +65,12 @@ namespace FORM
 
         private void btPlay_Click(object sender, EventArgs e)
         {
-            SoundPlayer somMusica = new SoundPlayer(@"\FORM\Audios\cafe.wav");
+            SoundPlayer somMusica = new SoundPlayer(@"Audios/cafe.wav");
             somMusica.Play();
         }
         private void btPause_Click(object sender, EventArgs e)
         {
-            SoundPlayer somMusica = new SoundPlayer(@"C:\Users\Vanderson\Desktop\FORM\Audios\cafe.wav");
+            SoundPlayer somMusica = new SoundPlayer(@"Audios/cafe.wav");
             somMusica.Stop();
         }
     }
