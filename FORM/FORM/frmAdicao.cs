@@ -8,11 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.Security.Cryptography;
 
 namespace FORM
 {
     public partial class frmAdicao : MetroFramework.Forms.MetroForm
     {
+        System.Media.SoundPlayer somErrou = new System.Media.SoundPlayer();
+        System.Media.SoundPlayer somAcertou = new System.Media.SoundPlayer();
+        System.Media.SoundPlayer somBotao = new System.Media.SoundPlayer();
+        System.Media.SoundPlayer somMusica = new System.Media.SoundPlayer();
+        
         public frmAdicao()
         {
             InitializeComponent();
@@ -26,8 +32,8 @@ namespace FORM
         }
         private void btCalcular_Click(object sender, EventArgs e)
         {
-            SoundPlayer somErrou = new SoundPlayer(@"C:\Users\Vanderson\Desktop\FORM\Audios\errou.wav");
-            SoundPlayer somAcertou = new SoundPlayer(@"C:\Users\Vanderson\Desktop\FORM\Audios\acertou.wav");
+            somErrou.SoundLocation = "audio//errou.wav";
+            somAcertou.SoundLocation = "audio//acertou.wav";
 
             int n1 = Convert.ToInt32(lbN1.Text);
             int n2 = Convert.ToInt32(lbN2.Text);
@@ -67,7 +73,7 @@ namespace FORM
         }
         private void btGerar_Click(object sender, EventArgs e)
         {
-            SoundPlayer somBotao = new SoundPlayer(@"C:\Users\Vanderson\Desktop\FORM\Audios\botao.wav");
+            somBotao.SoundLocation = "audio//botao.wav";
             somBotao.Play();
             lbN1.Text = "";
             lbN2.Text = "";
@@ -94,7 +100,7 @@ namespace FORM
                     formAberto.Show();
                     break;
                 }
-                SoundPlayer somMusica = new SoundPlayer(@"C:\Users\Vanderson\Desktop\FORM\Audios\cafe.wav");
+                somMusica.SoundLocation = "audio//cafe.wav";
                 somMusica.Play();
             }
         }  

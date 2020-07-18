@@ -40,60 +40,76 @@
             // btCalcular
             // 
             this.btCalcular.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btCalcular.BackColor = System.Drawing.Color.Yellow;
+            this.btCalcular.BackColor = System.Drawing.Color.White;
+            this.btCalcular.FlatAppearance.BorderSize = 0;
             this.btCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCalcular.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCalcular.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btCalcular.Image = ((System.Drawing.Image)(resources.GetObject("btCalcular.Image")));
+            this.btCalcular.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btCalcular.Location = new System.Drawing.Point(252, 90);
             this.btCalcular.Name = "btCalcular";
-            this.btCalcular.Size = new System.Drawing.Size(192, 47);
+            this.btCalcular.Size = new System.Drawing.Size(242, 52);
             this.btCalcular.TabIndex = 22;
             this.btCalcular.Text = "Adição";
+            this.btCalcular.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btCalcular.UseVisualStyleBackColor = false;
             this.btCalcular.Click += new System.EventHandler(this.btCalcular_Click);
             // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.BackColor = System.Drawing.Color.Yellow;
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.button1.Location = new System.Drawing.Point(252, 156);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(252, 206);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(192, 47);
+            this.button1.Size = new System.Drawing.Size(242, 52);
             this.button1.TabIndex = 23;
             this.button1.Text = "Multiplicação";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button2.BackColor = System.Drawing.Color.Yellow;
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.button2.Location = new System.Drawing.Point(252, 226);
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(252, 148);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(192, 47);
+            this.button2.Size = new System.Drawing.Size(242, 52);
             this.button2.TabIndex = 24;
             this.button2.Text = "Subtração";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button3.BackColor = System.Drawing.Color.Yellow;
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.button3.Location = new System.Drawing.Point(252, 298);
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(252, 264);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(192, 47);
+            this.button3.Size = new System.Drawing.Size(242, 52);
             this.button3.TabIndex = 25;
             this.button3.Text = "Divisão";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -101,11 +117,13 @@
             // 
             this.btPlay.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btPlay.BackColor = System.Drawing.Color.White;
-            this.btPlay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btPlay.FlatAppearance.BorderSize = 0;
+            this.btPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btPlay.Image = ((System.Drawing.Image)(resources.GetObject("btPlay.Image")));
-            this.btPlay.Location = new System.Drawing.Point(581, 362);
+            this.btPlay.Location = new System.Drawing.Point(569, 355);
+            this.btPlay.Margin = new System.Windows.Forms.Padding(0);
             this.btPlay.Name = "btPlay";
-            this.btPlay.Size = new System.Drawing.Size(47, 43);
+            this.btPlay.Size = new System.Drawing.Size(53, 50);
             this.btPlay.TabIndex = 26;
             this.btPlay.UseVisualStyleBackColor = false;
             this.btPlay.Click += new System.EventHandler(this.btPlay_Click);
@@ -114,11 +132,12 @@
             // 
             this.btPause.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btPause.BackColor = System.Drawing.Color.White;
-            this.btPause.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btPause.FlatAppearance.BorderSize = 0;
+            this.btPause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btPause.Image = ((System.Drawing.Image)(resources.GetObject("btPause.Image")));
-            this.btPause.Location = new System.Drawing.Point(634, 362);
+            this.btPause.Location = new System.Drawing.Point(628, 355);
             this.btPause.Name = "btPause";
-            this.btPause.Size = new System.Drawing.Size(47, 43);
+            this.btPause.Size = new System.Drawing.Size(53, 50);
             this.btPause.TabIndex = 27;
             this.btPause.UseVisualStyleBackColor = false;
             this.btPause.Click += new System.EventHandler(this.btPause_Click);
