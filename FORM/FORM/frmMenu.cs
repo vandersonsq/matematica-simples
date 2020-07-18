@@ -34,29 +34,28 @@ namespace FORM
             frmAdicao adicao = new frmAdicao();
             adicao.Show();
             this.Hide();
-            musicaCafe();
+            tocar.Stop();
         }
         private void button1_Click(object sender, EventArgs e)
         {
             frmMultiplicacao mult = new frmMultiplicacao();
             mult.Show();
             this.Hide();
-            musicaCafe();
-
+            tocar.Stop();
         }
         private void button2_Click(object sender, EventArgs e)
         {
             frmSubtracao sub = new frmSubtracao();
             sub.Show();
             this.Hide();
-            musicaCafe();
+            tocar.Stop();
         }
         private void button3_Click(object sender, EventArgs e)
         {
             frmDivisao div = new frmDivisao();
             div.Show();
             this.Hide();
-            musicaCafe();
+            tocar.Stop();
         }
         private void frmMenu_Load(object sender, EventArgs e)
         {

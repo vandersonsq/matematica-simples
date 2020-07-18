@@ -47,6 +47,7 @@
             this.picmeninaA = new System.Windows.Forms.PictureBox();
             this.btGerar = new System.Windows.Forms.Button();
             this.btCalcular = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picmeninaE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picmeninaA)).BeginInit();
             this.SuspendLayout();
@@ -125,7 +126,7 @@
             this.lbAcerto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbAcerto.AutoSize = true;
             this.lbAcerto.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAcerto.Location = new System.Drawing.Point(254, 432);
+            this.lbAcerto.Location = new System.Drawing.Point(255, 338);
             this.lbAcerto.Name = "lbAcerto";
             this.lbAcerto.Size = new System.Drawing.Size(203, 57);
             this.lbAcerto.TabIndex = 24;
@@ -261,11 +262,23 @@
             this.btCalcular.UseVisualStyleBackColor = false;
             this.btCalcular.Click += new System.EventHandler(this.btCalcular_Click);
             // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(310, 432);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(148, 57);
+            this.label4.TabIndex = 41;
+            this.label4.Text = "Status:";
+            // 
             // frmDivisao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(969, 546);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btGerar);
             this.Controls.Add(this.btCalcular);
             this.Controls.Add(this.picmeninaE);
@@ -316,5 +329,6 @@
         private System.Windows.Forms.PictureBox picmeninaA;
         private System.Windows.Forms.Button btGerar;
         private System.Windows.Forms.Button btCalcular;
+        private System.Windows.Forms.Label label4;
     }
 }

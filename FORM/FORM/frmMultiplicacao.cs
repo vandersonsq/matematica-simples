@@ -57,33 +57,41 @@ namespace FORM
 
             resultado = n1 * n2;
 
-            if (res - resultado == 0)
+            if (resultado <= 0 || resultado > 0)
             {
-                lbResultado.Text = resultado.ToString();
-                lbResposta.BackColor = System.Drawing.Color.Green;
-                lbResposta.Text = "CORRETA";
-                somAcertou.Play();
-                picmeninaA.Visible = true;
-                int cont = int.Parse(txtAcertou.Text);
-                cont++;
-                txtAcertou.Text = cont.ToString();
-                int resp = int.Parse(txtRespondidas.Text);
-                resp++;
-                txtRespondidas.Text = resp.ToString();
+                btCalcular.Enabled = false;
+                if (res - resultado == 0)
+                {
+                    lbResultado.Text = resultado.ToString();
+                    lbResposta.ForeColor = Color.Green;
+                    lbResposta.Text = "CORRETA";
+                    somAcertou.Play();
+                    picmeninaA.Visible = true;
+                    int cont = int.Parse(txtAcertou.Text);
+                    cont++;
+                    txtAcertou.Text = cont.ToString();
+                    int resp = int.Parse(txtRespondidas.Text);
+                    resp++;
+                    txtRespondidas.Text = resp.ToString();
+                }
+                else
+                {
+                    lbResultado.Text = resultado.ToString();
+                    lbResposta.ForeColor = Color.Red;
+                    lbResposta.Text = "INCORRETA";
+                    somErrou.Play();
+                    picmeninaE.Visible = true;
+                    int cont2 = int.Parse(txtErrou.Text);
+                    cont2++;
+                    txtErrou.Text = cont2.ToString();
+                    int resp = int.Parse(txtRespondidas.Text);
+                    resp++;
+                    txtRespondidas.Text = resp.ToString();
+                }
             }
             else
             {
-                lbResultado.Text = resultado.ToString();
-                lbResposta.BackColor = System.Drawing.Color.Red;
-                lbResposta.Text = "INCORRETA";
-                somErrou.Play();
-                picmeninaE.Visible = true;
-                int cont2 = int.Parse(txtErrou.Text);
-                cont2++;
-                txtErrou.Text = cont2.ToString();
-                int resp = int.Parse(txtRespondidas.Text);
-                resp++;
-                txtRespondidas.Text = resp.ToString();
+                btCalcular.Enabled = true;
             }
         }
         private void btGerar_Click_1(object sender, EventArgs e)
@@ -99,8 +107,8 @@ namespace FORM
             picmeninaE.Visible = false;
 
             Random r = new Random();
-            lbN1.Text += r.Next(10);
-            lbN2.Text += r.Next(10);
+            lbN1.Text += r.Next(2,10);
+            lbN2.Text += r.Next(2,10);
         }
         private void txtUsuario_KeyPress_1(object sender, KeyPressEventArgs e)
         {

@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Media;
-using System.Security.Cryptography;
 
 namespace FORM
 {
@@ -26,9 +18,8 @@ namespace FORM
         private void frm_Load(object sender, EventArgs e)
         {
             Random r = new Random();
-
-            lbN1.Text += r.Next(10);
-            lbN2.Text += r.Next(10);            
+            lbN1.Text += r.Next(2,30);
+            lbN2.Text += r.Next(2,30);
         }
         private void btCalcular_Click(object sender, EventArgs e)
         {
@@ -42,34 +33,42 @@ namespace FORM
 
             resultado = n1 + n2;
 
-            if (res - resultado == 0)
+            if (resultado <= 0 || resultado > 0)
             {
-                lbResultado.Text = resultado.ToString();
-                lbResposta.BackColor = System.Drawing.Color.Green;
-                lbResposta.Text = "CORRETA";
-                somAcertou.Play();
-                picmeninaA.Visible = true;
-                int cont = int.Parse(txtAcertou.Text);
-                cont++;
-                txtAcertou.Text = cont.ToString();
-                int resp = int.Parse(txtRespondidas.Text);
-                resp++;
-                txtRespondidas.Text = resp.ToString();
+                btCalcular.Enabled = false;
+                if (res - resultado == 0)
+                {
+                    lbResultado.Text = resultado.ToString();
+                    lbResposta.ForeColor = Color.Green;
+                    lbResposta.Text = "CORRETA";
+                    somAcertou.Play();
+                    picmeninaA.Visible = true;
+                    int cont = int.Parse(txtAcertou.Text);
+                    cont++;
+                    txtAcertou.Text = cont.ToString();
+                    int resp = int.Parse(txtRespondidas.Text);
+                    resp++;
+                    txtRespondidas.Text = resp.ToString();
+                }
+                else
+                {
+                    lbResultado.Text = resultado.ToString();
+                    lbResposta.ForeColor = Color.Red;
+                    lbResposta.Text = "INCORRETA";
+                    somErrou.Play();
+                    picmeninaE.Visible = true;
+                    int cont2 = int.Parse(txtErrou.Text);
+                    cont2++;
+                    txtErrou.Text = cont2.ToString();
+                    int resp = int.Parse(txtRespondidas.Text);
+                    resp++;
+                    txtRespondidas.Text = resp.ToString();
+                }
             }
             else
             {
-                lbResultado.Text = resultado.ToString();
-                lbResposta.BackColor = System.Drawing.Color.Red;
-                lbResposta.Text = "INCORRETA";
-                somErrou.Play();
-                picmeninaE.Visible = true;
-                int cont2 = int.Parse(txtErrou.Text);
-                cont2++;
-                txtErrou.Text = cont2.ToString();
-                int resp = int.Parse(txtRespondidas.Text);
-                resp++;
-                txtRespondidas.Text = resp.ToString();
-            }
+                btCalcular.Enabled = true;  
+            }   
         }
         private void btGerar_Click(object sender, EventArgs e)
         {
@@ -84,8 +83,8 @@ namespace FORM
             picmeninaE.Visible = false;
 
             Random r = new Random();
-            lbN1.Text += r.Next(10);
-            lbN2.Text += r.Next(10);
+            lbN1.Text += r.Next(2, 60);
+            lbN2.Text += r.Next(2, 60);
         } 
         private void frmAdicao_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -139,6 +138,10 @@ namespace FORM
 
         }
         private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+        private void lbResultado_Click(object sender, EventArgs e)
         {
 
         }
