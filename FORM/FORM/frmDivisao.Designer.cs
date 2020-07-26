@@ -126,7 +126,7 @@
             this.lbAcerto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbAcerto.AutoSize = true;
             this.lbAcerto.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAcerto.Location = new System.Drawing.Point(255, 338);
+            this.lbAcerto.Location = new System.Drawing.Point(354, 376);
             this.lbAcerto.Name = "lbAcerto";
             this.lbAcerto.Size = new System.Drawing.Size(203, 57);
             this.lbAcerto.TabIndex = 24;
@@ -137,7 +137,7 @@
             this.lbResposta.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbResposta.AutoSize = true;
             this.lbResposta.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbResposta.Location = new System.Drawing.Point(476, 432);
+            this.lbResposta.Location = new System.Drawing.Point(575, 470);
             this.lbResposta.Name = "lbResposta";
             this.lbResposta.Size = new System.Drawing.Size(0, 57);
             this.lbResposta.TabIndex = 23;
@@ -147,7 +147,7 @@
             this.lbResultado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbResultado.AutoSize = true;
             this.lbResultado.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbResultado.Location = new System.Drawing.Point(446, 338);
+            this.lbResultado.Location = new System.Drawing.Point(545, 376);
             this.lbResultado.Name = "lbResultado";
             this.lbResultado.Size = new System.Drawing.Size(47, 57);
             this.lbResultado.TabIndex = 22;
@@ -211,9 +211,9 @@
             // 
             this.picmeninaE.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.picmeninaE.Image = ((System.Drawing.Image)(resources.GetObject("picmeninaE.Image")));
-            this.picmeninaE.Location = new System.Drawing.Point(787, 393);
+            this.picmeninaE.Location = new System.Drawing.Point(215, 41);
             this.picmeninaE.Name = "picmeninaE";
-            this.picmeninaE.Size = new System.Drawing.Size(169, 141);
+            this.picmeninaE.Size = new System.Drawing.Size(457, 295);
             this.picmeninaE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picmeninaE.TabIndex = 38;
             this.picmeninaE.TabStop = false;
@@ -223,9 +223,9 @@
             // 
             this.picmeninaA.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.picmeninaA.Image = ((System.Drawing.Image)(resources.GetObject("picmeninaA.Image")));
-            this.picmeninaA.Location = new System.Drawing.Point(787, 393);
+            this.picmeninaA.Location = new System.Drawing.Point(215, 41);
             this.picmeninaA.Name = "picmeninaA";
-            this.picmeninaA.Size = new System.Drawing.Size(169, 141);
+            this.picmeninaA.Size = new System.Drawing.Size(457, 295);
             this.picmeninaA.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picmeninaA.TabIndex = 37;
             this.picmeninaA.TabStop = false;
@@ -267,7 +267,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(310, 432);
+            this.label4.Location = new System.Drawing.Point(409, 470);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(148, 57);
             this.label4.TabIndex = 41;
